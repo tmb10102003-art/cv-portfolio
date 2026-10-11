@@ -10,6 +10,36 @@
 @media(max-width:480px){.skills,.education{grid-template-columns:1fr}.brand span{display:none}nav .links{font-size:12px;gap:12px}.intro{font-size:18px}.footer-inner{flex-direction:column;gap:5px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{body{background:white;font-size:10pt}.wrap{max-width:none;padding:0}header,.actions,.profile,.strip,.contact,footer,.skip{display:none}.hero{display:block;padding:0 0 20px}h1{font-size:36pt;letter-spacing:-2px;margin:8px 0}h1 span{display:inline}.intro{font-size:12pt}.section-grid{grid-template-columns:150px 1fr;gap:20px}section{padding:20px 0}h2{font-size:19pt;margin:8px 0}h3{font-size:13pt}.lead{font-size:11pt}.job li,.skill p{font-size:10pt}.job,.skill,.qualification{break-inside:avoid}.job{padding-bottom:15px;margin-bottom:15px}.learning{background:white;padding:10px 0}.eyebrow{font-size:8pt}a{text-decoration:none}}
+
+/* Vibrant midnight theme */
+@media screen {
+:root{--ink:#f3f4ff;--paper:#0b1020;--muted:#b5bed5;--accent:#63f5d3;--line:#2b3450;color-scheme:dark}
+body{background:radial-gradient(ellipse at 80% 8%,#562c8c40,transparent 35%),radial-gradient(ellipse at 0% 30%,#13778320,transparent 40%),#0b1020}
+header{background:#0b1020c9;backdrop-filter:blur(16px)}
+.brand span{background:linear-gradient(135deg,#63f5d3,#79a4ff);color:#0b1020;border-radius:12px}
+nav .links a:hover{color:#63f5d3}
+.eyebrow{color:#63f5d3}
+h1{font-weight:800}h1 span{font-family:'Segoe UI',Arial,sans-serif;font-weight:800;font-style:normal;background:linear-gradient(100deg,#63f5d3 0%,#7ba7ff 45%,#dc8cff 95%);background-clip:text;-webkit-background-clip:text;color:transparent}
+.intro{color:#e0e6ff}
+.btn{border-color:#596786;border-radius:12px;transition:transform .18s,background .18s,box-shadow .18s}
+.btn.primary,.contact .primary{background:linear-gradient(110deg,#63f5d3,#83bcff);color:#091324;border-color:transparent;box-shadow:0 6px 28px #63f5d320}
+.btn:hover,.contact .btn:hover{background:#63f5d3;color:#091324;border-color:#63f5d3;transform:translateY(-3px);box-shadow:0 8px 28px #63f5d32b}
+a:focus-visible,button:focus-visible{outline-color:#63f5d3}
+.profile{background:linear-gradient(145deg,#202b4c,#171b33 58%,#2a1945);color:#f3f4ff;border:1px solid #5e578b;border-radius:24px;box-shadow:0 25px 75px #0005,inset 0 1px 0 #ffffff15}
+.profile::before{content:'';position:absolute;top:-100px;right:-100px;width:260px;height:260px;background:#9b6dff30;border-radius:50%;filter:blur(35px);pointer-events:none}
+.profile .monogram{font-family:'Segoe UI',Arial,sans-serif;font-weight:800;letter-spacing:-8px;color:#63f5d3;text-shadow:0 0 40px #63f5d325}
+.profile .eyebrow{color:#bca1ff}.profile p{color:#c1c8e0}.profile li{border-color:#424465}.profile li span{color:#b5bed5}
+.strip{background:#141b2d;border:1px solid #2b3450;padding:22px 25px;border-radius:16px}.strip span::before{color:#bda0ff}
+.skill{background:linear-gradient(145deg,#18233a,#13192b);border:1px solid #303c59;border-radius:16px;padding:25px;transition:border-color .2s,transform .2s}.skill:hover{border-color:#63f5d3;transform:translateY(-4px)}
+.skill .number{color:#63f5d3}.skill:nth-child(2) .number,.skill:nth-child(4) .number{color:#cca2ff}
+.role{color:#63f5d3}.job h3{color:#f3f4ff}.qualification{border-top:2px solid #8272d5}
+.learning{background:linear-gradient(115deg,#1b2942,#291e44);border:1px solid #4c4d75;border-radius:16px}.learning h3{color:#63f5d3}
+.contact{background:radial-gradient(ellipse at 90% 70%,#7544b74a,transparent 60%),linear-gradient(120deg,#142b38,#151a32);color:#f3f4ff;border-top:1px solid #454663}
+.contact .eyebrow{color:#63f5d3}.contact p{color:#c4cee7}.contact .btn{border-color:#65718e}
+footer{background:#090d19;color:#a5afcb}.skip{background:#63f5d3;color:#0b1020;border-radius:8px}
+}
+@media(prefers-reduced-motion:reduce){.btn,.skill{transition:none}.btn:hover,.skill:hover{transform:none}}
+
 </style>
 </head>
 <body>
